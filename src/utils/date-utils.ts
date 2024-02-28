@@ -1,6 +1,6 @@
-export const setDateByDays = (date: Date, daysToAdd: number): string => {
+export const setDateByDays = (date: Date, daysToAdd: number): Date => {
 	date.setDate(date.getDate() + daysToAdd)
-	return date.toISOString()
+	return date
 }
 
 export const createDateByDays = (days: number): Date => {
