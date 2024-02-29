@@ -3,6 +3,14 @@ import { type AppointmentProps } from '../@types/appointment'
 export class Appointment {
 	private readonly props: AppointmentProps
 
+	set id(id: string) {
+		this.props.id = id
+	}
+
+	get id(): string | undefined {
+		return this.props.id
+	}
+
 	get customer(): string {
 		return this.props.customer
 	}
